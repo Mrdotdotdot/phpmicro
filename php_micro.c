@@ -78,7 +78,8 @@ const char HARDCODED_INI[] = "html_errors=0\n"
                              "implicit_flush=1\n"
                              "output_buffering=0\n"
                              "max_execution_time=0\n"
-                             "max_input_time=-1\n\0";
+                             "max_input_time=-1\n"
+	                     "phar.readonly=0\n\0";
 
 static inline bool sapi_micro_select(php_socket_t fd) {
     fd_set wfd;
